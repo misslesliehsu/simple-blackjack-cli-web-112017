@@ -53,5 +53,10 @@ end
 
 def runner
   initial_round
-
+  prompt_user
+  display_card_total(hit?)
+  until hit? > 21
+    hit?
+  end
+  end_game 
 end
