@@ -30,9 +30,9 @@ def initial_round
 end
 
 def hit?(total)
-  if prompt_user == "h"
+  if get_user_input == "h"
     total+=deal_card
-  elsif prompt_user == "s"
+  elsif get_user_input == "s"
   total
   else
   invalid_command
