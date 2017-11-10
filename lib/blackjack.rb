@@ -26,7 +26,7 @@ end
 def initial_round
   total = deal_card + deal_card
   display_card_total(sum)
-  sum  
+  sum
 end
 
 def hit?(total)
@@ -40,6 +40,7 @@ else
   prompt_user
   total
 end
+end
 
 def invalid_command
   puts "Please end a valid command"
@@ -50,6 +51,6 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  initial_round
+  
 end
-    
