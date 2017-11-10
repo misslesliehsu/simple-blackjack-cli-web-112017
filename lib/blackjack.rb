@@ -32,14 +32,13 @@ end
 def hit?(total)
   if prompt_user == "h"
     total+=deal_card
-  end
-elsif prompt_user == "s"
+  elsif prompt_user == "s"
   total
-else
+  else
   invalid_command
   prompt_user
   total
-end
+  end
 end
 
 def invalid_command
@@ -52,5 +51,5 @@ end
 
 def runner
   initial_round
-  
+
 end
